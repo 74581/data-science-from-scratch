@@ -34,6 +34,10 @@ print("P(both | either):", both_girls / either_girls)  # ~ 1/3
 
 # 贝叶斯定理
 
+# P(E|F)=P(E,F)/P(F)=P(F|E)P(E)/P(F)
+# P(F)=P(F,E)+P(F,~E) # ~等于非
+# P(E|F)=P(E,F)/P(F)=P(F|E)P(E)/[P(F|E)P(E)+P(F|~E)P(~E)]
+
 # 随机变量
 
 # 连续分布
