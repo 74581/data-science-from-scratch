@@ -21,8 +21,8 @@
       <file leaf-file-name="6.Probability.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/6.Probability.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+            <state relative-caret-position="287">
+              <caret line="151" column="27" lean-forward="true" selection-start-line="151" selection-start-column="27" selection-end-line="151" selection-end-column="27" />
               <folding>
                 <element signature="e#68#81#0" expanded="true" />
               </folding>
@@ -430,7 +430,8 @@
     <MESSAGE value="lesson 6.1" />
     <MESSAGE value="Something of idea" />
     <MESSAGE value="lesson 6.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 6.2" />
+    <MESSAGE value="lesson 6.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 6.3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -605,15 +606,15 @@
         <state relative-caret-position="176">
           <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="54" />
           <folding>
-            <element signature="e#69#105#0" expanded="true" />
+            <element signature="e#69#105#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6.Probability.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="114" column="16" lean-forward="false" selection-start-line="114" selection-start-column="16" selection-end-line="114" selection-end-column="16" />
+        <state relative-caret-position="287">
+          <caret line="151" column="27" lean-forward="true" selection-start-line="151" selection-start-column="27" selection-end-line="151" selection-end-column="27" />
           <folding>
             <element signature="e#68#81#0" expanded="true" />
           </folding>
