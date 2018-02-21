@@ -150,3 +150,25 @@ p_hat = 540 / 1000
 mu = p_hat
 sigma = math.sqrt((p_hat * (1 - p_hat) / 1000))  # 0.0158
 normal_two_sided_bound(0.95, mu, sigma)  # [0.5091, 0.5709]在置信区间外
+
+
+# P-hacking
+
+def run_experiment():
+    """flip a fair coin 1000 times, True = heads, False = tails"""
+    return [random.random() < 0.5 for _ in range(1000)]
+
+
+def reject_fairness(experiment):
+    """using the 5% significance levels"""
+    num_heads = len([flip for flip in experiment if flip])
+    return num_heads < 469 or num_heads > 531
+
+
+random.seed(0)
+experiments = [run_experiment() for _ in range(1000)]
+num_rejections = len([experiment
+                      for experiment in experiments
+                      if reject_fairness(experiment)])
+print(num_rejections)  # 46
+# p值不应该靠直觉得出，替代方案有下文的“贝叶斯推断”
