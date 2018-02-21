@@ -5,6 +5,7 @@
 
 import math
 import random
+from matplotlib import pyplot as plt
 
 __author__ = "74581"
 
@@ -122,13 +123,13 @@ def two_sided_p_value(x, mu=0.0, sigma=1.0):
 two_sided_p_value(529.5, mu_0, sigma_0)  # 530次正面朝上~0.062
 
 # 验证模拟
-extreme_value_count = 0
-for _ in range(100000):
-    num_heads = sum(1 if random.random() < 0.5 else 0  # 正面朝上的计数
-                    for _ in range(1000))  # 在1000次抛掷中
-    if num_heads >= 530 or num_heads <= 470:  # 并计算达到极值的概率
-        extreme_value_count += 1  # 极值的频率
-print(extreme_value_count / 100000)  # 0.062 > 5%
+# extreme_value_count = 0
+# for _ in range(100000):
+#     num_heads = sum(1 if random.random() < 0.5 else 0  # 正面朝上的计数
+#                     for _ in range(1000))  # 在1000次抛掷中
+#     if num_heads >= 530 or num_heads <= 470:  # 并计算达到极值的概率
+#         extreme_value_count += 1  # 极值的频率
+# print(extreme_value_count / 100000)  # 0.062 > 5%
 
 two_sided_p_value(531.5, mu_0, sigma_0)  # 532次正面朝上，相应的p值为0.0463 < 5%
 
@@ -192,3 +193,28 @@ two_sided_p_value(z)  # 0.254
 
 z = a_b_test_statistic(1000, 200, 1000, 150)  # -2.94
 two_sided_p_value(z)  # 0.003
+
+
+# 贝叶斯推断
+
+def B(alpha, beta):
+    """a normalizing constant so that the total probability is 1"""
+    return math.gamma(alpha) * math.gamma(beta) / math.gamma(alpha + beta)
+
+
+def beta_pdf(x, alpha, beta):
+    if x < 0 or x > 1:  # [0,1]之外没有权重
+        return 0
+    return x ** (alpha - 1) * (1 - x) ** (beta - 1) / B(alpha, beta)
+
+
+xs = [x / 100 for x in range(100)]
+plt.plot(xs, [beta_pdf(x, alpha=1, beta=1) for x in xs], '-', label='Beta(1, 1)')
+plt.plot(xs, [beta_pdf(x, alpha=10, beta=10) for x in xs], '-.', label='Beta(10, 10)')
+plt.plot(xs, [beta_pdf(x, alpha=4, beta=16) for x in xs], ':', label='Beta(4, 16)')
+plt.plot(xs, [beta_pdf(x, alpha=16, beta=4) for x in xs], '--', label='Beta(16, 4)')
+plt.plot(xs, [beta_pdf(x, alpha=4, beta=8) for x in xs], '-', label='Beta(4, 8)')
+plt.plot(xs, [beta_pdf(x, alpha=23, beta=27) for x in xs], '-.', label='Beta(23, 27)')
+plt.plot(xs, [beta_pdf(x, alpha=33, beta=17) for x in xs], ':', label='Beta(33, 17)')
+plt.legend()
+plt.show()
