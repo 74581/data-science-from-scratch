@@ -20,7 +20,7 @@ def normal_approximation_to_binomial(n, p):
     return mu, sigma
 
 
-def normal_cdf(x, mu=0, sigma=1.0):  # 用到的第六章函数
+def normal_cdf(x, mu=0.0, sigma=1.0):  # 用到的第六章函数
     return (1 + math.erf((x - mu) / math.sqrt(2) / sigma)) / 2
 
 
@@ -29,21 +29,21 @@ normal_probability_below = normal_cdf
 
 
 # 如果它不在阈值以下，就在阈值以上
-def normal_probability_above(lo, mu=0, sigma=1.0):
+def normal_probability_above(lo, mu=0.0, sigma=1.0):
     return 1 - normal_cdf(lo, mu, sigma)
 
 
 # 如果它小于hi但不必lo小，那么它在区间之内
-def normal_probability_between(lo, hi, mu=0, sigma=1.0):
+def normal_probability_between(lo, hi, mu=0.0, sigma=1.0):
     return normal_cdf(hi, mu, sigma) - normal_cdf(lo, mu, sigma)
 
 
 # 如果不在区间之内，那么就在区间之外
-def normal_probability_outside(lo, hi, mu=0, sigma=1.0):
+def normal_probability_outside(lo, hi, mu=0.0, sigma=1.0):
     return 1 - normal_probability_between(lo, hi, mu, sigma)
 
 
-def inverse_normal_cdf(p, mu=0, sigma=1.0, tolerance=0.00001):  # 用到的第六章函数
+def inverse_normal_cdf(p, mu=0.0, sigma=1.0, tolerance=0.00001):  # 用到的第六章函数
     """find approximate inverse using binary search"""
     # 如果非标准型，先调整单位使之服从标准型
     if mu != 0 or sigma != 1:
@@ -65,17 +65,17 @@ def inverse_normal_cdf(p, mu=0, sigma=1.0, tolerance=0.00001):  # 用到的第�
     return mid_z
 
 
-def normal_upper_bound(probability, mu=0, sigma=1.0):
+def normal_upper_bound(probability, mu=0.0, sigma=1.0):
     """return the z for which P(Z <= z) = probability"""
     return inverse_normal_cdf(probability, mu, sigma)
 
 
-def normal_lower_bound(probability, mu=0, sigma=1.0):
+def normal_lower_bound(probability, mu=0.0, sigma=1.0):
     """return the z for which P(Z >= z) = probability"""
     return inverse_normal_cdf(1 - probability, mu, sigma)
 
 
-def normal_two_sided_bound(probability, mu=0, sigma=1.0):
+def normal_two_sided_bound(probability, mu=0.0, sigma=1.0):
     """return the symmetric (about the mean) bounds
     that contain the specified probability"""
     tail_probability = (1 - probability) / 2
@@ -110,7 +110,7 @@ power = 1 - type_2_probability  # 0.936
 
 
 # 另一种检验方式
-def two_sided_p_value(x, mu=0, sigma=1.0):
+def two_sided_p_value(x, mu=0.0, sigma=1.0):
     if x >= mu:
         # 如果x大于均值，tail表示比x大多少
         return 2 * normal_probability_above(x, mu, sigma)
@@ -137,3 +137,16 @@ lower_p_value = normal_probability_below
 
 upper_p_value(524.5, mu_0, sigma_0)  # 0.061
 upper_p_value(526.5, mu_0, sigma_0)  # 0.047
+# 计算p值前需要确定数据大致上服从正态分布，可以用绘图进行检验
+
+# 置信区间
+
+p_hat = 525 / 1000
+mu = p_hat
+sigma = math.sqrt((p_hat * (1 - p_hat) / 1000))  # 0.0158
+normal_two_sided_bound(0.95, mu, sigma)  # [0.4940, 0.5560]在置信区间内
+
+p_hat = 540 / 1000
+mu = p_hat
+sigma = math.sqrt((p_hat * (1 - p_hat) / 1000))  # 0.0158
+normal_two_sided_bound(0.95, mu, sigma)  # [0.5091, 0.5709]在置信区间外
