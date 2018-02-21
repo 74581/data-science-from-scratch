@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc09c2ba-cb7f-4248-b91f-81f201df7b49" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/7.Assumptions and inferences.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/7.Assumptions and inferences.py" afterPath="$PROJECT_DIR$/7.Assumptions_and_inferences.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,15 +16,16 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="7.Assumptions and inferences.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/7.Assumptions and inferences.py">
+      <file leaf-file-name="7.Assumptions_and_inferences.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/7.Assumptions_and_inferences.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="455">
+              <caret line="138" column="44" lean-forward="false" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
+              <folding>
+                <element signature="e#68#79#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,8 +63,9 @@
         <option value="$PROJECT_DIR$/3.Visual_data.py" />
         <option value="$PROJECT_DIR$/4.Linear_algebra.py" />
         <option value="$PROJECT_DIR$/5.Statistics.py" />
-        <option value="$PROJECT_DIR$/6.Probability.py" />
         <option value="$PROJECT_DIR$/7.Assumptions and inferences.py" />
+        <option value="$PROJECT_DIR$/6.Probability.py" />
+        <option value="$PROJECT_DIR$/7.Assumptions_and_inferences.py" />
       </list>
     </option>
   </component>
@@ -94,7 +97,7 @@
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers />
+      <showMembers ProjectPane="false" />
       <showModules />
       <showLibraryContents />
       <hideEmptyPackages />
@@ -108,44 +111,40 @@
     <panes>
       <pane id="ProjectPane">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-science-from-scratch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data-science-from-scratch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="data-science-from-scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="data-science-from-scratch" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="data-science-from-scratch" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Python" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
   </component>
-  <component name="RunManager" selected="Python.6.Probability">
-    <configuration default="false" name="3.Visualize_the_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Data_Science_from_Scratch-Python" />
-      <option name="SCRIPT_NAME" value="D:\Data_Science_from_Scratch-Python\3.Visual_data.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="3.Visual_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.7.Assumptions_and_inferences">
+    <configuration name="3.Visual_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -160,9 +159,10 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.Visual_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="false" name="4.Linear_algebra" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4.Linear_algebra" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -177,9 +177,10 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4.Linear_algebra.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="false" name="5.Statistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="5.Statistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -194,9 +195,10 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5.Statistics.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration default="false" name="6.Probability" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="6.Probability" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -211,7 +213,26 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6.Probability.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="7.Assumptions_and_inferences" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Data_Science_from_Scratch-Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7.Assumptions_and_inferences.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,19 +382,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.3.Visualize_the_data" />
-      <item index="1" class="java.lang.String" itemvalue="Python.3.Visual_data" />
-      <item index="2" class="java.lang.String" itemvalue="Python.4.Linear_algebra" />
-      <item index="3" class="java.lang.String" itemvalue="Python.5.Statistics" />
-      <item index="4" class="java.lang.String" itemvalue="Python.6.Probability" />
+      <item index="0" class="java.lang.String" itemvalue="Python.3.Visual_data" />
+      <item index="1" class="java.lang.String" itemvalue="Python.4.Linear_algebra" />
+      <item index="2" class="java.lang.String" itemvalue="Python.5.Statistics" />
+      <item index="3" class="java.lang.String" itemvalue="Python.6.Probability" />
+      <item index="4" class="java.lang.String" itemvalue="Python.7.Assumptions_and_inferences" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.6.Probability" />
-        <item index="1" class="java.lang.String" itemvalue="Python.5.Statistics" />
-        <item index="2" class="java.lang.String" itemvalue="Python.3.Visual_data" />
-        <item index="3" class="java.lang.String" itemvalue="Python.4.Linear_algebra" />
-        <item index="4" class="java.lang.String" itemvalue="Python.3.Visualize_the_data" />
+        <item index="0" class="java.lang.String" itemvalue="Python.7.Assumptions_and_inferences" />
+        <item index="1" class="java.lang.String" itemvalue="Python.6.Probability" />
+        <item index="2" class="java.lang.String" itemvalue="Python.5.Statistics" />
+        <item index="3" class="java.lang.String" itemvalue="Python.3.Visual_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.4.Linear_algebra" />
       </list>
     </recent_temporary>
   </component>
@@ -384,11 +405,10 @@
     <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13806552" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14118564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33173078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31410256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -416,6 +436,14 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
             </State>
           </value>
         </entry>
@@ -431,7 +459,8 @@
     <MESSAGE value="lesson 6.2" />
     <MESSAGE value="lesson 6.3" />
     <MESSAGE value="lesson 6.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson 6.4" />
+    <MESSAGE value="Add lesson 7" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add lesson 7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -440,12 +469,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/6.Probability.py">
+    <entry file="file://$PROJECT_DIR$/7.Assumptions_and_inferences.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#68#79#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.Assumptions_and_inferences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#68#79#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -454,9 +493,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.Probability.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -563,7 +606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="3248" column="4" lean-forward="false" selection-start-line="3248" selection-start-column="4" selection-end-line="3248" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -571,19 +613,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="475" column="4" lean-forward="false" selection-start-line="475" selection-start-column="4" selection-end-line="475" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/data-science-from-scratch-master/code-python3/databases.py" />
     <entry file="file://D:/data-science-from-scratch-master/code-python3/getting_data.py" />
-    <entry file="file://$PROJECT_DIR$/5.Statistics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-800">
-          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/2.Python_crash.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1226">
@@ -595,9 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1919">
           <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding>
-            <element signature="e#69#106#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -605,27 +636,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="11" column="54" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <element signature="e#69#105#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/6.Probability.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#68#81#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="51">
+          <caret line="95" column="12" lean-forward="true" selection-start-line="95" selection-start-column="12" selection-end-line="95" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/7.Assumptions and inferences.py">
+    <entry file="file://$PROJECT_DIR$/5.Statistics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="8" lean-forward="false" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        <state relative-caret-position="204">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.Assumptions_and_inferences.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="138" column="44" lean-forward="false" selection-start-line="138" selection-start-column="44" selection-end-line="138" selection-end-column="44" />
+          <folding>
+            <element signature="e#68#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
