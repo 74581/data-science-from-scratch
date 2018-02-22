@@ -100,3 +100,20 @@ while True:
     if distance(next_v, v) < tolerance:  # 如果收敛了就停止
         break
     v = next_v  # 如果没汇合就继续
+
+# 选择正确步长
+
+step_sizes = [100, 10, 1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
+
+
+def safe(f):
+    """return a new function that's the same as f,
+    except that it outputs infinity whenever f produces an error"""
+
+    def safe_f(*args, **kwargs):
+        try:
+            return f(*args, **kwargs)
+        except TypeError:
+            return float('inf')
+
+    return safe_f
