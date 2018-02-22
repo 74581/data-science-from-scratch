@@ -38,7 +38,17 @@ derivative_estimate = partial(difference_quotient, square, h=0.00001)
 # 绘出导入matplotlib.pyplot作为plt的基本相同的形态
 xs = range(-10, 10)
 plt.title("精确的导数值与估计值")
-plt.plot(xs, [2 * x for x in xs], 'rx', label='Actual')  # 用 x 表示
-plt.plot(xs, [difference_quotient(square, y, 0.00001) for y in xs], 'b+', label='Estimate')  # 用 + 表示
+"""
+map(derivative, xs)报错：
+AttributeError: 'numpy.ndarray' object has no attribute 'mask'
+
+原因：
+map()在python3中返回generator而不是list
+
+解决办法：
+list(map())
+"""
+plt.plot(xs, list(map(derivative, xs)), 'rx', label='Actual')
+plt.plot(xs, list(map(derivative_estimate, xs)), 'b+', label='Estimate')
 plt.legend(loc=9)
 plt.show()
