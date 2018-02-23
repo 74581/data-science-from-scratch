@@ -159,8 +159,66 @@ def negate_all(f):
     return lambda *args, **kwargs: [-y for y in f(*args, **kwargs)]
 
 
-def maximize_batch(target_fn, gradient_fn, theta_0, tolerence=0.000001):
+def maximize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
     return minimize_batch(negate(target_fn),
                           negate_all(gradient_fn),
                           theta_0,
                           tolerance)
+
+
+# 随机梯度下降法
+
+def in_random_order(data):
+    """generator that returns the elements of data in random order"""
+    indexes = [i for i, _ in enumerate(data)]  # 生成索引列表
+    random.shuffle(indexes)  # 随机打乱数据
+    for i in indexes:  # 返回序列中的数据
+        yield data[i]
+
+
+def vector_subtract(v, w):
+    """subtracts corresponding elements"""
+    return [v_i - w_i
+            for v_i, w_i in zip(v, w)]
+
+
+def scalar_multiply(c, v):
+    """c is a number, v is a vector"""
+    return [c * v_i for v_i in v]
+
+
+def minimize_stochastic(target_fn, gradient_fn, x, y, theta_0, alpha_0=0.01):
+    data = zip(x, y)
+    theta = theta_0  # 初始值猜测
+    alpha = alpha_0  # 初始步长
+    min_theta, min_value = None, float("inf")  # 迄今为止的最小值
+    iterations_with_no_improvement = 0
+
+    # 如果循环超过100次仍无改进，停止
+    while iterations_with_no_improvement < 100:
+        value = sum(target_fn(x_i, y_i, theta) for x_i, y_i in data)
+
+        if value < min_value:
+            # 如果找到新的最小值，记住它
+            # 并返回到最初步长
+            min_theta, min_value = theta, value
+            iterations_with_no_improvement = 0
+            alpha = alpha_0
+        else:
+            # 尝试缩小步长，否则没有改进
+            iterations_with_no_improvement += 1
+            alpha *= 0.9
+
+        # 在每个数据点上向梯度方向前进一步：
+        for x_i, y_i in in_random_order(data):
+            gradient_i = gradient_fn(x_i, y_i, theta)
+            theta = vector_subtract(theta, scalar_multiply(alpha, gradient_i))
+            # theta = [v_i - w_i for v_i, w_i in zip(theta, [alpha * v_i for v_i in gradient_i])]
+
+    return min_theta
+
+
+def maximize_stochastic(target_fn, gradient_fn, x, y, theta_0, alpha_0=0.01):
+    return minimize_stochastic(negate(target_fn),
+                               negate_all(gradient_fn),
+                               x, y, theta_0, alpha_0)
