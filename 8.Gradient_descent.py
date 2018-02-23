@@ -106,6 +106,7 @@ while True:
 step_sizes = [100, 10, 1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
 
 
+# 某些步长会导致函数输入无效，需要一个对无效输入值返回无限值的“安全应用”函数
 def safe(f):
     """return a new function that's the same as f,
     except that it outputs infinity whenever f produces an error"""
@@ -117,3 +118,49 @@ def safe(f):
             return float('inf')
 
     return safe_f
+
+
+# 综合
+
+# 梯度下降法
+def minimize_batch(target_fn, gradient_fn, theta_0, tolerance=0.000001):
+    """use gradient descent to find theta that minimizes target function"""
+
+    step_sizes = [100, 10, 1, 0.1, 0.01, 0.001, 0.0001, 0.00001]
+
+    theta = theta_0  # 设定theta为初始值
+    target_fn = safe(target_fn)  # target_fn的安全版
+    value = target_fn(theta)  # 我们试图最小化的值
+
+    while True:
+        gradient = gradient_fn(theta)
+        next_thetas = [step(theta, gradient, -step_size)
+                       for step_size in step_sizes]
+
+        # 选择一个使残差函数最小的值
+        next_theta = min(next_thetas, key=target_fn)
+        next_value = target_fn(next_theta)
+
+        # 当“收敛”时停止
+        if abs(value - next_value) < tolerance:
+            return theta
+        else:
+            theta, value = next_theta, next_value
+
+
+# 需要最大化某个函数，只需要最小化这个函数的负值（相应的梯度函数也取负）
+def negate(f):
+    """return a function that for any input x returns -f(x)"""
+    return lambda *args, **kwargs: -f(*args, **kwargs)
+
+
+def negate_all(f):
+    """the same when f returns a list of numbers"""
+    return lambda *args, **kwargs: [-y for y in f(*args, **kwargs)]
+
+
+def maximize_batch(target_fn, gradient_fn, theta_0, tolerence=0.000001):
+    return minimize_batch(negate(target_fn),
+                          negate_all(gradient_fn),
+                          theta_0,
+                          tolerance)
