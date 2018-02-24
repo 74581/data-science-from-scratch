@@ -4,10 +4,9 @@
     <list id="2b8f75bb-91f5-444c-96e1-5d359f270834" name="Revert &quot;lesson 8.3&quot;" comment="Revert &quot;lesson 8.3&quot;&#10;&#10;This reverts commit 649bdaf" />
     <list id="b9253a94-323e-4207-84ad-20f09eebf3fb" name="lesson 8.4" comment="lesson 8." />
     <list id="7d27c774-6a6b-4f7d-b850-5c65c895ab33" name="Revert &quot;lesson 8.3&quot;-2" comment="Revert &quot;lesson 8.3&quot;&#10;&#10;This reverts commit 649bdaf" />
-    <list default="true" id="bc09c2ba-cb7f-4248-b91f-81f201df7b49" name="Default" comment="Add lesson 9/line_count.py">
-      <change beforePath="" afterPath="$PROJECT_DIR$/most_common_words.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+    <list default="true" id="bc09c2ba-cb7f-4248-b91f-81f201df7b49" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/9.Retrieve_data.py" afterPath="$PROJECT_DIR$/9.Retrieve_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,11 +32,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="9.Retrieve_data.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="9.Retrieve_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/9.Retrieve_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="272">
+              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -53,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="most_common_words.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="most_common_words.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/most_common_words.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -103,10 +102,10 @@
         <option value="$PROJECT_DIR$/7.Assumptions_and_inferences.py" />
         <option value="$PROJECT_DIR$/4.Linear_algebra.py" />
         <option value="$PROJECT_DIR$/8.Gradient_descent.py" />
-        <option value="$PROJECT_DIR$/9.Retrieve_data.py" />
         <option value="$PROJECT_DIR$/egrep.py" />
         <option value="$PROJECT_DIR$/line_count.py" />
         <option value="$PROJECT_DIR$/most_common_words.py" />
+        <option value="$PROJECT_DIR$/9.Retrieve_data.py" />
       </list>
     </option>
   </component>
@@ -516,7 +515,8 @@
     <MESSAGE value="Add lesson 9" />
     <MESSAGE value="Add lesson 9/egrep.py" />
     <MESSAGE value="Add lesson 9/line_count.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add lesson 9/line_count.py" />
+    <MESSAGE value="Add lesson 9/most_common_words.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add lesson 9/most_common_words.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -840,14 +840,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/9.Retrieve_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/egrep.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -871,6 +863,14 @@
           <folding>
             <element signature="e#92#102#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/9.Retrieve_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
