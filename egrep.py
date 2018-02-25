@@ -17,5 +17,6 @@ regex = sys.argv[1]
 
 # 对传递到这个脚本中的每一个行
 for line in sys.stdin:
+    # 如果它匹配正则表达式，则把它写入stdout
     if re.search(regex, line):
         sys.stdout.write(line)

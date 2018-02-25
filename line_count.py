@@ -19,4 +19,3 @@ print(count)
 
 # "|"运算符是管道字符，意思是“使用左边命令的输出作为右边命令的输入”
 # type SomeFile.txt | python egrep.py "[0-9]" | python line_count.py
-# type SomeFile.txt | egrep.py "[0-9]" | line_count.py

@@ -5,8 +5,12 @@
     <list id="b9253a94-323e-4207-84ad-20f09eebf3fb" name="lesson 8.4" comment="lesson 8." />
     <list id="7d27c774-6a6b-4f7d-b850-5c65c895ab33" name="Revert &quot;lesson 8.3&quot;-2" comment="Revert &quot;lesson 8.3&quot;&#10;&#10;This reverts commit 649bdaf" />
     <list default="true" id="bc09c2ba-cb7f-4248-b91f-81f201df7b49" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/9.Retrieve_data.py" afterPath="$PROJECT_DIR$/9.Retrieve_data.py" />
+      <change beforePath="$PROJECT_DIR$/egrep.py" afterPath="$PROJECT_DIR$/egrep.py" />
+      <change beforePath="$PROJECT_DIR$/line_count.py" afterPath="$PROJECT_DIR$/line_count.py" />
+      <change beforePath="$PROJECT_DIR$/most_common_words.py" afterPath="$PROJECT_DIR$/most_common_words.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,45 +24,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="8.Gradient_descent.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/8.Gradient_descent.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="473">
-              <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
-              <folding>
-                <element signature="e#68#81#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="9.Retrieve_data.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/9.Retrieve_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="line_count.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/line_count.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="most_common_words.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/most_common_words.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="523">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
-                <element signature="e#92#102#0" expanded="true" />
+                <element signature="e#69#79#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,7 +137,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,25 +155,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.most_common_words">
-    <configuration name="5.Statistics" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Data_Science_from_Scratch-Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5.Statistics.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.9.Retrieve_data">
     <configuration name="6.Probability" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -251,6 +205,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Data_Science_from_Scratch-Python" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/8.Gradient_descent.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="9.Retrieve_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Data_Science_from_Scratch-Python" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/9.Retrieve_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -422,19 +394,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.5.Statistics" />
-      <item index="1" class="java.lang.String" itemvalue="Python.6.Probability" />
-      <item index="2" class="java.lang.String" itemvalue="Python.7.Assumptions_and_inferences" />
-      <item index="3" class="java.lang.String" itemvalue="Python.8.Gradient_descent" />
-      <item index="4" class="java.lang.String" itemvalue="Python.most_common_words" />
+      <item index="0" class="java.lang.String" itemvalue="Python.6.Probability" />
+      <item index="1" class="java.lang.String" itemvalue="Python.7.Assumptions_and_inferences" />
+      <item index="2" class="java.lang.String" itemvalue="Python.8.Gradient_descent" />
+      <item index="3" class="java.lang.String" itemvalue="Python.most_common_words" />
+      <item index="4" class="java.lang.String" itemvalue="Python.9.Retrieve_data" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.most_common_words" />
-        <item index="1" class="java.lang.String" itemvalue="Python.8.Gradient_descent" />
-        <item index="2" class="java.lang.String" itemvalue="Python.7.Assumptions_and_inferences" />
-        <item index="3" class="java.lang.String" itemvalue="Python.6.Probability" />
-        <item index="4" class="java.lang.String" itemvalue="Python.5.Statistics" />
+        <item index="0" class="java.lang.String" itemvalue="Python.9.Retrieve_data" />
+        <item index="1" class="java.lang.String" itemvalue="Python.most_common_words" />
+        <item index="2" class="java.lang.String" itemvalue="Python.8.Gradient_descent" />
+        <item index="3" class="java.lang.String" itemvalue="Python.7.Assumptions_and_inferences" />
+        <item index="4" class="java.lang.String" itemvalue="Python.6.Probability" />
       </list>
     </recent_temporary>
   </component>
@@ -449,9 +421,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13962558" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31410256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33173078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31410256" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,7 +488,8 @@
     <MESSAGE value="Add lesson 9/egrep.py" />
     <MESSAGE value="Add lesson 9/line_count.py" />
     <MESSAGE value="Add lesson 9/most_common_words.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add lesson 9/most_common_words.py" />
+    <MESSAGE value="lesson 9.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson 9.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -578,7 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3325">
           <caret line="229" column="7" lean-forward="false" selection-start-line="229" selection-start-column="4" selection-end-line="229" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -608,7 +580,7 @@
         <state relative-caret-position="199">
           <caret line="115" column="25" lean-forward="false" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
           <folding>
-            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#68#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -618,7 +590,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#68#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -736,13 +708,6 @@
       </provider>
     </entry>
     <entry file="file://D:/data-science-from-scratch-master/code-python3/charts.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/collections/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="540" column="8" lean-forward="false" selection-start-line="540" selection-start-column="8" selection-end-line="540" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.PyCharmEdu3.5/system/python_stubs/-412137093/builtins.py" />
     <entry file="file://D:/data-science-from-scratch-master/code-python3/databases.py" />
     <entry file="file://D:/data-science-from-scratch-master/code-python3/getting_data.py" />
@@ -795,20 +760,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.Introduction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2.Python_crash.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3325">
-          <caret line="229" column="7" lean-forward="false" selection-start-line="229" selection-start-column="4" selection-end-line="229" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.Visual_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -830,47 +781,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/1.Introduction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2.Python_crash.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/8.Gradient_descent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="224" column="0" lean-forward="false" selection-start-line="224" selection-start-column="0" selection-end-line="224" selection-end-column="0" />
+        <state relative-caret-position="-616">
+          <caret line="160" column="0" lean-forward="true" selection-start-line="160" selection-start-column="0" selection-end-line="160" selection-end-column="0" />
           <folding>
-            <element signature="e#68#81#0" expanded="true" />
+            <element signature="e#68#81#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/egrep.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="16" lean-forward="true" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/collections/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="1236" column="8" lean-forward="false" selection-start-line="1236" selection-start-column="8" selection-end-line="1236" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/line_count.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/most_common_words.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="438">
+          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#92#102#0" expanded="true" />
+            <element signature="e#92#102#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/9.Retrieve_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="8" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="523">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding>
+            <element signature="e#69#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

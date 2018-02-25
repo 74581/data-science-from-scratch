@@ -18,8 +18,8 @@ except TypeError:
     print("usage: most_common_words.py num_words")
     sys.exit(1)  # 非零的exit代码表明有错误
 
-counter = Counter(word.lower()
-                  for line in sys.stdin  # 小写的单词
+counter = Counter(word.lower()  # 小写的单词
+                  for line in sys.stdin
                   for word in line.strip().split()  # 用空格划分
                   if word)  # 跳过空的‘words’
 
@@ -29,4 +29,4 @@ for word, count in counter.most_common(num_words):
     sys.stdout.write(word)
     sys.stdout.write("\n")
 
-# type the_bible.txt | python most_common_words.py 10
+# type SomeFile.txt | python most_common_words.py 10
