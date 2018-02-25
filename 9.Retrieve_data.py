@@ -4,6 +4,7 @@
 """a test module"""
 
 import csv
+import json
 import re
 from collections import Counter
 import requests
@@ -252,3 +253,16 @@ book_counts = [year_counts[year] for year in years]
 # plt.ylabel("数据图书的数量")
 # plt.title("数据大发展!")
 # plt.show()
+
+# 使用API
+
+# JSON（和XML）
+serialized = """{ "title" : "Data Science Book",
+                  "author" : "Joel Grus",
+                  "publicationYear" : 2014,
+                  "topics" : [ "data", "science", "data science"] }"""
+
+# 解析JSON以创建一个Python字典
+deserialized = json.loads(serialized)
+if "data science" in deserialized["topics"]:
+    print(deserialized)
