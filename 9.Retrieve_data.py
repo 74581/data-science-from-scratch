@@ -8,8 +8,13 @@ import re
 from collections import Counter
 import requests
 from bs4 import BeautifulSoup
+from time import sleep
+from matplotlib import pyplot as plt
 
 __author__ = '74581'
+
+plt.rcParams['font.sans-serif'] = ['Simhei']  # 用来正常显示中文标签
+plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
 # stdin和stdout
 
@@ -158,3 +163,92 @@ important_paragraphs3 = [p for p in soup('p')
 spans_inside_div = [span
                     for div in soup('div')  # 对页面上的每一个<div>
                     for span in div('span')]  # 找到其中的每一个<span>
+
+# 案例：关于数据的O'Reilly图书
+# 原书抓取网站改变，使用新的url进行测试
+# url = "http://shop.oreilly.com/category/browse-subjects/data.do?sortby=publicationDate&page=1"
+url = "https://ssearch.oreilly.com/?i=1;m_Sort=searchDate;page=1;q=data;q1=Books;q2=O%27Reilly+Media;x1=t1;x2=publisher&act=pg_1"
+# soup = BeautifulSoup(requests.get(url).text, 'html5lib')
+
+# tds = soup('td', 'thumbtext')  # 之后所有‘td’用‘art’代替
+# 该页面源代码中每本书都唯一地包含在一个元素<article>中，它的类是result，“<article, class='result'>”
+arts = soup('article', 'result product-result')
+
+
+# print(len(arts))  # 16
+
+
+# 过滤视频地址（已无效，新地址无视频）
+def is_video(art):
+    """it's a video if it has exactly one pricelabel, and if
+    the stripped text inside that pricelabel starts with 'Video'"""
+    pricelabels = art('span', 'pricelabel')
+    return (len(pricelabels) == 1 and
+            pricelabels[0].text.strip().startswith("Video"))
+
+
+# print(len([art for art in arts if not is_video(art)]))  # 16
+
+
+def book_info(art):
+    """given a BeautifulSoup <article> Tag representing a book,
+    extract the book's details and return a dict"""
+
+    title = art.find("p", "title").a.text
+    by_author = art.find('p', 'note').text
+    authors = [x.strip() for x in re.sub("^By ", "", by_author).split(",")]
+    # 新地址信息中无国际标准书号
+    # isbn_limk = td.find("div", "thumbheader").a.get("href")
+    # re.match捕捉了括号中的正则表达式部分
+    # isbn = re.match("/product/(.*)\.do", isbn_limk).group(1)
+    date = art.find("p", "note date2").text
+    date2 = [x.strip() for x in re.sub("^Release Date: ", "", date).split()]
+
+    return {
+        "title": title,
+        "authors": authors,
+        # "isbn": isbn,
+        "date": date2
+    }
+
+
+base_url1 = "https://ssearch.oreilly.com/?i=1;m_Sort=searchDate;page="
+base_url2 = ";q=data;q1=Books;q2=O%27Reilly+Media;x1=t1;x2=publisher&act=pg_"
+
+books = []
+
+NUM_PAGES = 24  # 测试时的值，现在可能更多
+
+
+# for page_num in range(1, NUM_PAGES + 1):
+#     url = base_url1 + str(page_num) + base_url2 + str(page_num)
+#     soup = BeautifulSoup(requests.get(url).text, 'html5lib')
+#
+#     for art in soup('article', 'result product-result'):
+#         # if not is_video(art):
+#         books.append(book_info(art))
+#
+#     print("souping page", page_num, ",", len(books), " found so far")
+#     # 现在做一个好公民，遵守robots.txt!
+#     # sleep(30)
+
+
+def get_year(book):
+    """book["date"] looks like 'February 2018' so we need to
+    split on the space and then take the second piece"""
+    try:
+        return int(book["date"][1])
+    except IndexError:
+        return None
+
+
+# 2018是包含数据的最后一个完整的年份（我运行这段代码的时间）
+year_counts = Counter(get_year(book) for book in books
+                      if get_year(book) is not None)
+
+years = sorted(year_counts)
+book_counts = [year_counts[year] for year in years]
+# plt.plot(years, book_counts)
+# plt.ylabel("数据图书的数量")
+# plt.title("数据大发展!")
+# plt.show()
