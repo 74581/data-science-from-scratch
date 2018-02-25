@@ -11,6 +11,7 @@ import requests
 from bs4 import BeautifulSoup
 from time import sleep
 from matplotlib import pyplot as plt
+from dateutil.parser import parse
 
 __author__ = '74581'
 
@@ -266,3 +267,26 @@ serialized = """{ "title" : "Data Science Book",
 deserialized = json.loads(serialized)
 if "data science" in deserialized["topics"]:
     print(deserialized)
+# 可仿照从HTML获取数据的方式，用BeautifulSoup从XML中获取数据
+
+# 使用无验证的API
+endpoint = "https://api.github.com/users/joelrus/repos"
+
+repos = json.loads(requests.get(endpoint).text)
+
+dates = [parse(repo["created_at"]) for repo in repos]
+month_counts = Counter(date.month for date in dates)
+weekday_counts = Counter(date.weekday() for date in dates)
+
+last_5_repositories = sorted(repos,
+                             key=lambda r: r["created_at"],
+                             reverse=True)[:5]
+
+last_5_language = [repo["language"]
+                   for repo in last_5_repositories]
+
+# 寻找API
+# Python有一个Rotten Tomatoes库，有针对Klout、Yelp、IMDB等多个API封装
+# 查看有Python封装的AP列表，可参阅Python API和Python for Beginners中的两个名录
+# 更宽泛的网络API名录（不一定有Python封装），Programmable Web有一个分好类的API的庞大名录
+# 找不到还可以抓取获得
